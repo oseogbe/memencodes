@@ -1,0 +1,117 @@
+// @import '_tailwind';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
+:root {
+  --primary-color: #BF9001;
+  --secondary-color: #1C212B;
+
+  --hue: 207;
+  --sat: 90%;
+  --lig: 61%;
+
+  --first-color: hsl(var(--hue), var(--sat), var(--lig));
+  --first-color-alt: hsl(var(--hue), var(--sat), 57%);
+  --title-color: hsl(var(--hue), 12%, 15%);
+  --text-color: hsl(var(--hue), 12%, 45%);
+  --text-color-light: hsl(var(--hue), 8%, 75%);
+  --text-color-lighten: hsl(var(--hue), 8%, 92%);
+  --body-color: hsl(var(--hue), 100%, 99%);
+  --container-color: #FFF;
+  
+  // font-size: 62.5%;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  :root {
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: .1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  // object-fit: contain;
+}
+
+#app {
+  background-color: var(--body-color);
+  font-size: var(--normal-font-size);
+}
+
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 992px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  background-color: var(--first-color);
+  color: #FFF;
+  padding: 1.15rem 1.5rem;
+  border-radius: .5rem;
+  transition: .3s;
+  box-shadow: 0 8px 24px hsl(var(--hue), var(--sat), var(--lig), .25);
+
+  &:hover {
+    background-color: var(--first-color-alt);
+  }
+
+  i {
+    font-size: 1.25rem;
+  }
+
+  &__small {
+    padding: .75rem;
+    box-shadow: none;
+  }
+
+  &__gray {
+    background-color: var(--text-color-lighten);
+    color: var(--title-color);
+
+    &:hover {
+      background-color: var(--text-color-light);
+    }
+  }
+}
