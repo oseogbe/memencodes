@@ -1,7 +1,10 @@
 <template>
     <div>
         <Header />
-
+        <main>
+            <ProjectsAndSkills />
+        </main>
+        <Footer />
     </div>
 </template>
 

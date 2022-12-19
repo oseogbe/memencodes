@@ -40,7 +40,7 @@
             </div>
 
             <div class="profile__buttons">
-                <a download="" href="/assets/pdf/Osememen-Ogbe-CV.pdf" class="button">
+                <a download href="@/assets/pdf/Osememen-Ogbe-CV.pdf" class="button">
                     Download CV <i class="fas fa-download" style="font-size: 1rem;"></i>
                 </a>
 
@@ -74,7 +74,7 @@
                 text-align: center;
 
                 .profile__border {
-                    border: 3.5px solid #000;
+                    border: 3.5px solid var(--first-color);
                     justify-self: center;
                     width: 115px;
                     height: 115px;
@@ -90,7 +90,7 @@
                                     hsla(var(--hue), var(--sat), var(--lig), 1) 0%,
                                     hsla(var(--hue), var(--sat), var(--lig), 1) 100%);
                         border-radius: 50%;
-                        border: 1px solid #000;
+                        border: 1px solid var(--first-color);
                         overflow: hidden;
                         display: flex;
                         align-items: flex-start;
@@ -109,6 +109,8 @@
                 .profile__profession {
                     font-size: var(--smaller-font-size);
                     font-weight: 500;
+                    color: var(--text-color);
+                    margin-bottom: 1rem;
                 }
 
                 .profile__social {
@@ -145,6 +147,7 @@
                 &-description {
                     font-size: var(--smaller-font-size);
                     font-weight: 500;
+                    color: var(--text-color);
                 }
             }
 
