@@ -1,0 +1,18 @@
+.dark-theme {
+    --title-color: hsl(var(--hue), 12%, 95%);
+    --text-color: hsl(var(--hue), 12%, 75%);
+    --body-color: hsl(var(--hue), 40%, 8%);
+    --container-color: hsl(var(--hue), 24%, 12%);
+
+    .button__gray {
+        background-color: var(--container-color);
+
+        &:hover {
+            background-color: hsl(var(--hue), 24%, 16%);
+        }
+    }
+
+    .filters__content {
+        background-color: var(--container-color) !important;
+    }
+}

@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
 
+@import '_dark-theme';
+
 :root {
   --primary-color: #BF9001;
   --secondary-color: #1C212B;
@@ -48,7 +50,7 @@
   // object-fit: contain;
 }
 
-#app {
+body {
   background-color: var(--body-color);
   font-size: var(--normal-font-size);
 }
@@ -113,5 +115,36 @@ img {
     &:hover {
       background-color: var(--text-color-light);
     }
+  }
+}
+
+/*======== Scroll Bar ========*/
+::-webkit-scrollbar {
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(var(--hue), 8%, 66%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: .5rem;
+  background-color: hsl(var(--hue), 8%, 54%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(var(--hue), 8%, 44%);
+}
+
+/*========== Theme ==========*/
+.change-theme {
+  position: absolute;
+  top: 1.5rem;
+  right: 0;
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    color: var(--first-color);
   }
 }

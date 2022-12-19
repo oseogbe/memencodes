@@ -1,5 +1,12 @@
 <template>
     <header class="profile container">
+        
+        <i :class="[isLight ? 'far fa-moon' : 'far fa-sun', 'change-theme']" 
+            id="theme-button"
+            @click="toggleTheme"
+        >
+        </i>
+
         <div class="profile__container grid">
             <div class="profile__data">
                 <div class="profile__border">
@@ -40,7 +47,7 @@
             </div>
 
             <div class="profile__buttons">
-                <a download href="@/assets/pdf/Osememen-Ogbe-CV.pdf" class="button">
+                <a download href="pdf/Osememen-Ogbe-CV.pdf" class="button">
                     Download CV <i class="fas fa-download" style="font-size: 1rem;"></i>
                 </a>
 
@@ -58,7 +65,32 @@
 </template>
 
 <script setup>
+    import { ref, onMounted } from "vue"
 
+    const isLight = ref(true)
+
+    useHead({
+        script: [
+            {
+                src: "js/change-theme.js",
+                body: true,
+            }
+        ]
+    })
+
+    const toggleTheme = () => {
+        isLight.value = !isLight.value
+        const icon = isLight.value ? 'moon' : 'sun'
+        localStorage.setItem('selected-icon', icon)
+    }
+
+    onMounted(() => {
+        const icon = localStorage.getItem('selected-icon')
+
+        if(icon) {
+            isLight.value = icon == 'moon' ? true : false
+        }
+    })
 </script>
 
 <style lang="scss" scoped>

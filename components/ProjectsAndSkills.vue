@@ -14,7 +14,7 @@
             <!-- Projects -->
             <div class="projects__content grid" :class="{'filters__active': onProjects}">
                 <article class="projects__card" v-for="project in projects">
-                    <img :src="`/_nuxt/${project.thumbnail}`" alt="" class="projects__img">
+                    <img :src="project.thumbnail" alt="" class="projects__img">
 
                     <div class="projects__modal">
                         <div>
@@ -61,19 +61,19 @@
         {
             'category': 'Recruitment',
             'title': 'Hire4Africa',
-            'thumbnail': 'assets/img/h4a_1.png',
+            'thumbnail': 'img/h4a_1.png',
             'link': 'https://hire4africa.com'
         },
         {
             'category': 'Affiliate Marketing',
             'title': 'LifestyleHub',
-            'thumbnail': 'assets/img/lsh_1.png',
+            'thumbnail': 'img/lsh_1.png',
             'link': 'https://lsh.cp.reimnet.com'
         },
         {
             'category': 'E-Commerce',
             'title': 'TheArtVille',
-            'thumbnail': 'assets/img/artco_1.png',
+            'thumbnail': 'img/artco_1.png',
             'link': 'https://theartville.com'
         },
     ]);
