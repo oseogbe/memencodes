@@ -24,6 +24,7 @@ export default defineNuxtConfig({
       
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: [
-        'assets/css/main.scss'
+        'assets/css/main.scss',
+        'assets/css/dark-theme.scss',
     ],
 })

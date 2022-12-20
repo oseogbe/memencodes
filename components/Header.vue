@@ -198,5 +198,61 @@
                 column-gap: .25rem;
             }
         }
+
+        .change-theme {
+            position: absolute;
+            top: 1.5rem;
+            right: 0;
+            font-size: 1.25rem;
+            color: var(--title-color);
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                color: var(--first-color);
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        .change-theme {
+            top: 2.5rem;
+            right: 2.5rem;
+        }
+
+        .profile {
+            padding-top: 4rem;
+
+            &__container {
+                .profile__data {
+                    .profile__border {
+                        width: 135px;
+                        height: 135px;
+                        margin-bottom: 1rem;
+
+                        .profile__perfil {
+                            width: 120px;
+                            height: 120px;
+                        }
+                    }
+
+                    .profile__profession {
+                        margin-bottom: 1.5rem;
+                    }
+                }
+
+                .profile__info {
+                    column-gap: 3rem;
+
+                    &-description {
+                        font-size: var(--small-font-size);
+                    }
+                }
+
+                .profile__buttons {
+                    column-gap: 1.5rem;
+                }
+            }
+        }
     }
 </style>

@@ -1,45 +1,8 @@
 // @import '_tailwind';
+@import '_variables';
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
-
-@import '_dark-theme';
-
-:root {
-  --primary-color: #BF9001;
-  --secondary-color: #1C212B;
-
-  --hue: 207;
-  --sat: 90%;
-  --lig: 61%;
-
-  --first-color: hsl(var(--hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--hue), var(--sat), 57%);
-  --title-color: hsl(var(--hue), 12%, 15%);
-  --text-color: hsl(var(--hue), 12%, 45%);
-  --text-color-light: hsl(var(--hue), 8%, 75%);
-  --text-color-lighten: hsl(var(--hue), 8%, 92%);
-  --body-color: hsl(var(--hue), 100%, 99%);
-  --container-color: #FFF;
-  
-  // font-size: 62.5%;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  :root {
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: .1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
-  }
-}
 
 * {
   margin: 0;
@@ -53,6 +16,7 @@
 body {
   background-color: var(--body-color);
   font-size: var(--normal-font-size);
+  transition: .3s;  /* for dark mode animation */
 }
 
 h1, h2, h3 {
@@ -134,17 +98,9 @@ img {
   background-color: hsl(var(--hue), 8%, 44%);
 }
 
-/*========== Theme ==========*/
-.change-theme {
-  position: absolute;
-  top: 1.5rem;
-  right: 0;
-  font-size: 1.25rem;
-  color: var(--title-color);
-  cursor: pointer;
-  transition: .3s;
-
-  &:hover {
-    color: var(--first-color);
+@media (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -15,4 +15,16 @@
     .filters__content {
         background-color: var(--container-color) !important;
     }
+
+    ::-webkit-scrollbar {
+        background-color: hsl(var(--hue), 8%, 16%);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: hsl(var(--hue), 8%, 24%);
+
+        &:hover {
+            background-color: hsl(var(--hue), 8%, 32%);
+        }
+    }
 }

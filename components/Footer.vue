@@ -18,4 +18,10 @@
         font-size: var(--small-font-size);
         color: var(--text-color-light);
     }
+
+    @media (min-width: 992px) {
+        .footer__copy {
+            margin: 4.5rem 0 2.5rem;
+        }
+    }
 </style>

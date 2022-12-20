@@ -310,5 +310,65 @@
         }
     }
 
+    @media (min-width: 576px) {
+        .filters {
+            &__content {
+                width: 332px;
+                margin: 3rem auto;
+            }
+
+            &__sections {
+                .projects__content {
+                    grid-template-columns: 332px;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 776px) {
+        .filters {
+            &__sections {
+                .projects__content,
+                .skills__content {
+                    grid-template-columns: repeat(2, 332px);
+
+                    .skills__title {
+                        padding-left: 18%;
+                    }
+
+                    .skills__group {
+                        .skills__data {
+                            padding-left: 34%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        .filters {
+            &__sections {
+                .projects__content {
+                    gap: 2rem 3rem;
+
+                    .projects__card {
+                        .projects__modal {
+                            padding: 1.5rem;
+                        }
+                    }
+                }
+                .skills__content {
+                    padding-left: 13%;
+
+                    .skills__title {
+                        font-size: var(--normal-font-size);
+                        margin-bottom: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
     
 </style>
