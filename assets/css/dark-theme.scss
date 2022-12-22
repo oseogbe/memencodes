@@ -16,6 +16,16 @@
         background-color: var(--container-color) !important;
     }
 
+    .skills__content {
+        .skills__area {
+            .skills__group {
+                .skills__level {
+                    color: hsl(var(--hue), 12%, 75%);
+                }
+            }
+        }
+    }
+
     ::-webkit-scrollbar {
         background-color: hsl(var(--hue), 8%, 16%);
     }
