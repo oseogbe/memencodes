@@ -376,11 +376,11 @@
             &__sections {
                 .projects__content,
                 .skills__content {
-                    grid-template-columns: repeat(3, 380px);
+                    grid-template-columns: repeat(3, 353px);
                 }
 
                 .skills__content {
-                    padding-left: 9%;
+                    padding-left: 17.5%;
                 }
             }
         }
