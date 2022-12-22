@@ -370,5 +370,20 @@
             }
         }
     }
+
+    @media (min-width: 1200px) {
+        .filters {
+            &__sections {
+                .projects__content,
+                .skills__content {
+                    grid-template-columns: repeat(3, 380px);
+                }
+
+                .skills__content {
+                    padding-left: 9%;
+                }
+            }
+        }
+    }
     
 </style>
