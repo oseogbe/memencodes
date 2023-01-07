@@ -52,7 +52,7 @@
 </template>
 
 <script setup>
-    import { reactive, ref } from "vue";
+    import { reactive, ref, onMounted } from "vue";
 
     const onProjects = ref(true);
     const onSkills = ref(false);
@@ -76,6 +76,18 @@
             'thumbnail': 'img/artco_1.png',
             'link': 'https://theartville.com'
         },
+        // {
+        //     'category': 'Movies',
+        //     'title': 'Muvee',
+        //     'thumbnail': 'img/muvee.png',
+        //     'link': 'https://muvee.netlify.app'
+        // },
+        // {
+        //     'category': 'Portfolio',
+        //     'title': 'Aybee Adayi',
+        //     'thumbnail': 'img/aybee-adayi.png',
+        //     'link': 'https://aybeeadayi.netlify.app'
+        // },
     ]);
 
     const skills = reactive([
@@ -167,7 +179,10 @@
             ]
         }
     ])
-   
+
+    onMounted(() => {
+        const projectsCount = useState('projectsCount', () => projects.length)
+    })
 </script>
 
 <style lang="scss" scoped>

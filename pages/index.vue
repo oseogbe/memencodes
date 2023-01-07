@@ -3,6 +3,7 @@
         <Header />
         <main>
             <ProjectsAndSkills />
+            <Packages />
         </main>
         <Footer />
     </div>

@@ -11,7 +11,7 @@
             <div class="profile__data">
                 <div class="profile__border">
                     <div class="profile__perfil">
-                        <img src="/img/me.jpg" alt="Osememen Ogbe Portrait">
+                        <img src="/img/me5.jpg" alt="Osememen Ogbe Portrait">
                     </div>
                 </div>
 
@@ -37,7 +37,7 @@
                     <p class="profile__info-description">Years of <br /> work</p>
                 </div>
                 <div class="profile__info-group">
-                    <h3 class="profile__info-number">3</h3>
+                    <h3 class="profile__info-number">{{ projectsCount }}</h3>
                     <p class="profile__info-description">Completed <br /> projects</p>
                 </div>
                 <div class="profile__info-group">
@@ -83,6 +83,8 @@
         const icon = isLight.value ? 'moon' : 'sun'
         localStorage.setItem('selected-icon', icon)
     }
+
+    const projectsCount = useState('projectsCount')
 
     onMounted(() => {
         const icon = localStorage.getItem('selected-icon')
