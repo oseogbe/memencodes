@@ -21,6 +21,11 @@
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
+
+    // z-index
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
 }
 
 // Large devices (desktops, 992px and up)

@@ -2,8 +2,8 @@
     <div>
         <Header />
         <main>
-            <ProjectsAndSkills />
             <Packages />
+            <ProjectsAndSkills />
         </main>
         <Footer />
     </div>

@@ -16,7 +16,7 @@
                 </div>
 
                 <h2 class="profile__name">Osememen Ogbe</h2>
-                <h3 class="profile__profession">Web Developer</h3>
+                <h3 class="profile__profession">Full-stack Developer</h3>
 
                 <ul class="profile__social">
                     <a href="https://www.instagram.com/mynameisose" target="_blank" class="profile__social-link">

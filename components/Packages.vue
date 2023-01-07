@@ -1,13 +1,42 @@
 <template>
-    <div>
-        
+    <div id="packages">
+        <h2 class="section__title">Packages</h2>
+        <h3 class="section__subtitle">What would you like me to do for you?</h3>
+
+        <div class="packages__container container grid">
+            <div class="packages__content" v-for="p in packages">
+                <div>
+                    <i class="fas fa-globe packages__icon"></i>
+                    <h3 class="packages__title">{{ p.title }}</h3>
+                    <h4 class="packages__subtitle">{{ p.subtitle }}</h4>
+                    <p class="packages__description">{{ p.description }}</p>
+                </div>
+
+                <span class="button button__small button__link packages__button">
+                    What's Included?
+                    <i class="fas fa-arrow-right button__icon"></i>
+                </span>
+
+                <div class="packages__modal">
+                    <div class="packages__modal-content">
+                        <h4 class="packages__modal-title">{{ p.subtitle }}</h4>
+                        <i class="far fa-circle-xmark packages__modal-close"></i>
+
+                        <ul class="packages__modal-services grid">
+                            <li class="packages__modal-service">
+                                <i class="far fa-check-circle packages__modal-icon"></i>
+                                <p></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
 <script setup>
-    import { reactive } from 'vue'
-
-    const packages = reactive([
+    const packages = [
         {
             'title': 'Basic',
             'subtitle': 'Landing Page',
@@ -22,7 +51,7 @@
         {
             'title': 'Standard',
             'subtitle': 'Static Website',
-            'description': 'Do you care for a standard business website that typically contains a home, about, services and contact page? How about a standalone blog site? Or would you prefer an all-inclusive feature website. I\'m just a message away!',
+            'description': 'Do you care for a standard business website that typically contains a home, about, services and contact page? How about a stand-alone blog site? Or would you prefer an all-inclusive feature website. I\'m just a message away!',
             'addons': 'blog, content upload, opt-in form, speed optimization, hosting setup, social media icons',
             'delivery_time': '18-30 days',
             'no_of_pages': 4-5,
@@ -41,9 +70,134 @@
             'starting_at': 'N750,000',
             'additional_info': 'Please note that the total cost of the project is exclusive of any charges incurred from purchasing a domain name, hosting or any other 3rd party service.'
         }
-    ])
+    ];
 </script>
 
 <style lang="scss" scoped>
+    #packages {
+        margin-top: 3rem;
+        text-align: center;
+    }
 
+    .section__title {
+        font-size: var(--h2-font-size);
+        font-weight: 600;
+    }
+
+    .section__subtitle {
+        font-size: var(--smaller-font-size);
+        font-weight: 500;
+        color: var(--text-color);
+        margin-bottom: 1rem;
+    }
+
+    .packages__container {
+        gap: 1.5rem;
+
+        .packages__content {
+            position: relative;
+            background-color: var(--container-color);
+            padding: 3.5rem 1.5rem;
+            border-radius: .25rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+            transition: .3s;
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+
+            &:hover {
+                box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+            }
+
+            .packages__icon {
+                display: block;
+                font-size: 1.5rem;
+                color: var(--first-color);
+                margin-bottom: 1rem;
+            }
+
+            .packages__title {
+                margin-bottom: .5rem;
+            }
+
+            .packages__subtitle {
+                font-weight: 500;
+                margin-bottom: 1rem;
+            }
+
+            .packages__description {
+                margin-bottom: 1.5rem;
+            }
+
+            .packages__button {
+                display: block;
+                margin-top: auto;
+
+                &:hover {
+                    .button__icon {
+                        transform: translateX(.25rem);
+                    }
+                }
+            }
+            
+            
+
+            .packages__modal {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, .5);
+                display: flex;
+                align-items: center;
+                padding: 0 1rem;
+                z-index: var(--z-modal);
+                // opacity: 0;
+                visibility: hidden;
+                transition: .3s;
+
+                &-content {
+                    position: relative;
+                    background-color: var(--container-color);
+                    padding: 1.5rem;
+                    border-radius: .5rem;
+                }
+
+                &-title {
+                    font-size: var(--h3-font-size);
+                    font-weight: 400;
+                    margin-bottom: 1.5rem;
+                }
+
+                &-close {
+                    position: absolute;
+                    top: 1rem;
+                    right: 1rem;
+                    font-size: 1.5rem;
+                    color: var(--first-color);
+                    cursor: pointer;
+                }
+
+                &-services {
+                    row-gap: 1rem;
+                }
+
+                &-service {
+                    display: flex;
+                }
+
+                &-icon {
+                    color: var(--first-color);
+                    margin-right: .25rem;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        .packages__container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
 </style>
