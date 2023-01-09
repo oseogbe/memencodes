@@ -180,6 +180,7 @@
                 background-color: rgba(0, 0, 0, .5);
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 padding: 0 1rem;
                 z-index: var(--z-modal);
                 transition: .3s;
@@ -235,6 +236,12 @@
             .packages__content {
                 width: 70%;
                 margin: 0 auto;
+
+                .packages__modal {
+                    &-content {
+                        width: 80%;
+                    }
+                }
             }
         }
     }
@@ -250,6 +257,12 @@
 
             .packages__content {
                 width: 100%;
+
+                .packages__modal {
+                    &-content {
+                        width: 65%;
+                    }
+                }
             }
         }
     }
@@ -259,6 +272,14 @@
             width: 90%;
             padding-left: 0;
             padding-right: 0;
+
+            .packages__content {
+                .packages__modal {
+                    &-content {
+                        width: 50%;
+                    }
+                }
+            }
         }
     }
 
@@ -266,6 +287,14 @@
         .packages__container {
             grid-template-columns: repeat(3, 1fr);
             width: 100%;
+
+            .packages__content {
+                .packages__modal {
+                    &-content {
+                        width: 40%;
+                    }
+                }
+            }
         }
     }
 </style>
