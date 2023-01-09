@@ -1,13 +1,13 @@
 <template>
     <footer>
         <span class="footer__copy">
-            &#169; MemenCodes. All rights reserved
+            &#169;{{ currentYear }} MemenCodes. All rights reserved
         </span>
     </footer>
 </template>
 
 <script setup>
-
+    const currentYear = new Date().getFullYear();
 </script>
 
 <style lang="scss" scoped>

@@ -33,16 +33,20 @@
 
             <div class="profile__info grid">
                 <div class="profile__info-group">
-                    <h3 class="profile__info-number">3</h3>
-                    <p class="profile__info-description">Years of <br /> work</p>
+                    <h3 class="profile__info-number">{{ yearsOfExp }}</h3>
+                    <p class="profile__info-description">Years of <br /> experience</p>
+                </div>
+                <!-- <div class="profile__info-group">
+                    <h3 class="profile__info-number">2</h3>
+                    <p class="profile__info-description">Acquired <br /> certifications</p>
+                </div> -->
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">{{ courses.length }}</h3>
+                    <p class="profile__info-description">Development <br /> courses</p>
                 </div>
                 <div class="profile__info-group">
                     <h3 class="profile__info-number">{{ projectsCount }}</h3>
                     <p class="profile__info-description">Completed <br /> projects</p>
-                </div>
-                <div class="profile__info-group">
-                    <h3 class="profile__info-number">3</h3>
-                    <p class="profile__info-description">Satisfied <br /> customers</p>
                 </div>
             </div>
 
@@ -77,6 +81,10 @@
             }
         ]
     })
+
+    const yearsOfExp = new Date().getFullYear() - 2021;
+
+    const courses = [];
 
     const toggleTheme = () => {
         isLight.value = !isLight.value

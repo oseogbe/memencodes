@@ -19,7 +19,7 @@ body {
   transition: .3s;  /* for dark mode animation */
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   color: var(--title-color);
   font-weight: 600;
 }
@@ -70,6 +70,16 @@ img {
   &__small {
     padding: .75rem;
     box-shadow: none;
+  }
+
+  &__link {
+    padding: 0;
+    background: transparent;
+    color: var(--first-color);
+
+    &:hover {
+      background-color: var(--first-color-alt);
+    }
   }
 
   &__gray {
