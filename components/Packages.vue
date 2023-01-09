@@ -1,5 +1,5 @@
 <template>
-    <div id="packages">
+    <div class="packages">
         <h2 class="section__title">Packages</h2>
         <h3 class="section__subtitle">What would you like me to do for you?</h3>
 
@@ -98,7 +98,7 @@
 </script>
 
 <style lang="scss" scoped>
-    #packages {
+    .packages {
         margin-top: 3rem;
         text-align: center;
     }
