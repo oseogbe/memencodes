@@ -279,6 +279,7 @@
 
             .skills__content {
                 row-gap: 3.5rem;
+                justify-content: center;
 
                 .skills__title {
                     font-size: var(--h3-font-size);
@@ -294,7 +295,6 @@
                     .skills__data {
                         display: flex;
                         column-gap: .5rem;
-                        padding-left: 18%;
 
                         i {
                             font-size: 1rem;
@@ -333,9 +333,20 @@
             }
 
             &__sections {
+                .projects__content,
+                .skills__content {
+                    .skills__group {
+                        gap: 1rem 4rem;
+                    }
+                }
+
                 .projects__content {
-                    grid-template-columns: 332px;
-                    justify-content: center;
+                    width: 70%;
+                    margin: auto;
+                }
+
+                .skills__content {
+                    column-gap: 10%;
                 }
             }
         }
@@ -346,17 +357,13 @@
             &__sections {
                 .projects__content,
                 .skills__content {
-                    grid-template-columns: repeat(2, 332px);
+                    grid-template-columns: repeat(2, 1fr);
+                }
 
-                    .skills__title {
-                        padding-left: 18%;
-                    }
-
-                    .skills__group {
-                        .skills__data {
-                            padding-left: 34%;
-                        }
-                    }
+                .projects__content,
+                .skills__content {
+                    width: 80%;
+                    margin: auto;
                 }
             }
         }
@@ -367,6 +374,7 @@
             &__sections {
                 .projects__content {
                     gap: 2rem 3rem;
+                    width: 90%;
 
                     .projects__card {
                         .projects__modal {
@@ -375,8 +383,6 @@
                     }
                 }
                 .skills__content {
-                    padding-left: 13%;
-
                     .skills__title {
                         font-size: var(--normal-font-size);
                         margin-bottom: 2.5rem;
@@ -389,13 +395,18 @@
     @media (min-width: 1200px) {
         .filters {
             &__sections {
-                .projects__content,
-                .skills__content {
-                    grid-template-columns: repeat(3, 353px);
+                .projects__content {
+                    grid-template-columns: repeat(3, 1fr);
+                    width: 100%;
                 }
 
                 .skills__content {
-                    padding-left: 17.5%;
+                    column-gap: 20%;
+                    width: 50%;
+
+                    .skills__group {
+                        gap: 1rem 8rem;
+                    }
                 }
             }
         }
