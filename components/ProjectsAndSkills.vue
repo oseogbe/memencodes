@@ -335,6 +335,8 @@
             &__sections {
                 .projects__content,
                 .skills__content {
+                    margin: auto;
+
                     .skills__group {
                         gap: 1rem 4rem;
                     }
@@ -342,7 +344,6 @@
 
                 .projects__content {
                     width: 70%;
-                    margin: auto;
                 }
 
                 .skills__content {
@@ -352,7 +353,7 @@
         }
     }
 
-    @media (min-width: 776px) {
+    @media (min-width: 768px) {
         .filters {
             &__sections {
                 .projects__content,
@@ -363,7 +364,6 @@
                 .projects__content,
                 .skills__content {
                     width: 80%;
-                    margin: auto;
                 }
             }
         }
