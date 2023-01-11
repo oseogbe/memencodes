@@ -1,6 +1,6 @@
 <template>
     <div class="packages">
-        <h2 class="section__title">Packages</h2>
+        <h2 class="section__title">&lt;Packages /&gt;</h2>
         <h3 class="section__subtitle">What would you like me to do for you?</h3>
 
         <div class="packages__container container grid">
@@ -101,135 +101,138 @@
     .packages {
         margin-top: 3rem;
         text-align: center;
-    }
 
-    .section__title {
-        font-size: var(--h2-font-size);
-        font-weight: 600;
-    }
+        .section__title {
+            font-size: var(--h2-font-size);
+            font-weight: 600;
+        }
 
-    .section__subtitle {
-        font-size: var(--smaller-font-size);
-        font-weight: 500;
-        color: var(--text-color);
-        margin-bottom: 1rem;
-    }
+        .section__subtitle {
+            font-size: var(--smaller-font-size);
+            font-weight: 500;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+        }
 
-    .packages__container {
-        gap: 1.5rem;
+        .packages__container {
+            gap: 1.5rem;
+            margin-top: 3rem;
 
-        .packages__content {
-            position: relative;
-            background-color: var(--container-color);
-            padding: 3.5rem 1.5rem;
-            border-radius: .25rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
-            transition: .3s;
-            display: flex;
-            flex-direction: column;
-            // align-items: center;
-
-            &:hover {
-                box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
-            }
-
-            .packages__icon {
-                display: block;
-                font-size: 1.5rem;
-                color: var(--first-color);
-                margin-bottom: 1rem;
-            }
-
-            .packages__title {
-                margin-bottom: .5rem;
-            }
-
-            .packages__subtitle {
-                font-weight: 500;
-                margin-bottom: 1rem;
-            }
-
-            .packages__description {
-                margin-bottom: 1.5rem;
-                color: var(--text-color);
-            }
-
-            .packages__button {
-                display: block;
-                margin-top: auto;
-                cursor: pointer;
-                font-size: var(--small-font-size);
-
-                .button__icon {
-                    font-size: var(--small-font-size);
-                }
+            .packages__content {
+                position: relative;
+                background-color: var(--container-color);
+                padding: 3.5rem 1.5rem;
+                border-radius: .25rem;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+                transition: .3s;
+                display: flex;
+                flex-direction: column;
+                // align-items: center;
 
                 &:hover {
-                    .button__icon {
-                        transform: translateX(.25rem);
-                    }
-                }
-            }
-
-            .packages__modal {
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background-color: rgba(0, 0, 0, .5);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 0 1rem;
-                z-index: var(--z-modal);
-                transition: .3s;
-
-                &-content {
-                    position: relative;
-                    background-color: var(--container-color);
-                    padding: 1.5rem;
-                    border-radius: .5rem;
-                    text-align: left;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
                 }
 
-                &-title {
-                    font-size: var(--h3-font-size);
-                    font-weight: 400;
-                    margin-bottom: 1.5rem;
-                }
-
-                &-close {
-                    position: absolute;
-                    top: 1.5rem;
-                    right: 1rem;
+                .packages__icon {
+                    display: block;
                     font-size: 1.5rem;
                     color: var(--first-color);
-                    cursor: pointer;
+                    margin-bottom: 1rem;
                 }
 
-                // &-services {
-                //     row-gap: 1rem;
-                // }
+                .packages__title {
+                    margin-bottom: .5rem;
+                }
 
-                &-service {
-                    display: flex;
+                .packages__subtitle {
+                    font-weight: 500;
+                    margin-bottom: 1rem;
+                }
+
+                .packages__description {
+                    margin-bottom: 1.5rem;
                     color: var(--text-color);
                 }
 
-                &-icon {
-                    color: var(--first-color);
-                    margin-right: .5rem;
-                    margin-top: .3rem;
-                }
-            }
+                .packages__button {
+                    display: block;
+                    margin-top: auto;
+                    cursor: pointer;
+                    font-size: var(--small-font-size);
 
-            .active__modal {
-                opacity: 1;
-                visibility: visible;
+                    .button__icon {
+                        font-size: var(--small-font-size);
+                    }
+
+                    &:hover {
+                        .button__icon {
+                            transform: translateX(.25rem);
+                        }
+                    }
+                }
+
+                .packages__modal {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: rgba(0, 0, 0, .5);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0 1rem;
+                    z-index: var(--z-modal);
+                    transition: .3s;
+
+                    &-content {
+                        position: relative;
+                        background-color: var(--container-color);
+                        padding: 1.5rem;
+                        border-radius: .5rem;
+                        text-align: left;
+                    }
+
+                    &-title {
+                        font-size: var(--h3-font-size);
+                        font-weight: 400;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    &-close {
+                        position: absolute;
+                        top: 1.5rem;
+                        right: 1rem;
+                        font-size: 1.5rem;
+                        color: var(--first-color);
+                        cursor: pointer;
+                    }
+
+                    // &-services {
+                    //     row-gap: 1rem;
+                    // }
+
+                    &-service {
+                        display: flex;
+                        color: var(--text-color);
+                    }
+
+                    &-icon {
+                        color: var(--first-color);
+                        margin-right: .5rem;
+                        margin-top: .3rem;
+                    }
+                }
+
+                .active__modal {
+                    opacity: 1;
+                    visibility: visible;
+                }
             }
         }
     }
+
+    
 
     @media (min-width: 576px) {
         .packages__container {

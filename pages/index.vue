@@ -2,7 +2,8 @@
     <div>
         <Header />
         <main>
-            <Packages />
+            <AboutMe />
+            <MyPackages />
             <ProjectsAndSkills />
         </main>
         <Footer />

@@ -20,7 +20,8 @@
     sr.reveal(`.profile__info-group`, { interval: 100, delay: 600 })
     sr.reveal(`.profile__buttons`, { delay: 800 })
     sr.reveal(`.profile__content`, { delay: 900 })
-    sr.reveal(`.packages`, { delay: 1000 })
+    sr.reveal(`.about`, { delay: 1000 })
+    // sr.reveal(`.packages`, { delay: 50 })
     sr.reveal(`.filters`, { delay: 50 })
   })
 </script>

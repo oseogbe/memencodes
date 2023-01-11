@@ -13,7 +13,7 @@ export default defineNuxtConfig({
                 },
                 { 
                     name: 'description', 
-                    content: '<em>Welcome</em> to <em>MemenCodes</em>. My name is Osememen Ogbe and I\'m really passionate about coding, problem solving and sharing my journey with others. You can get to see some of the projects I\'ve worked on, my favorite learning materials, and even contact me if you\'ve got a job for me!' 
+                    content: '<em>Welcome</em> to <em>MemenCodes</em>. My name is Osememen Ogbe and I\'m really passionate about app development and artificial intelligence, problem solving and sharing my journey in the IT industry with others. On this site, I\'ll be posting some of the projects I\'ve worked on and sharing the little knowledge I\'ve gathered through development courses and blog articles. As for anyone who might have a job/gig for me, we can have a chat about it over a cup of coffee!' 
                 }
             ],
             link: [      

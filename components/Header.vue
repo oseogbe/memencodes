@@ -15,8 +15,9 @@
                     </div>
                 </div>
 
-                <h2 class="profile__name">Osememen Ogbe</h2>
-                <h3 class="profile__profession">Full-stack Developer</h3>
+                <h2 class="profile__name">&lt;MemenCodes /&gt;</h2>
+                <h3 class="profile__profession">Connect, learn and grow with <br />the software development community</h3>
+                <!-- <h3 class="profile__profession">Full-stack Developer</h3> -->
 
                 <ul class="profile__social">
                     <a href="https://www.instagram.com/mynameisose" target="_blank" class="profile__social-link">
@@ -82,7 +83,7 @@
         ]
     })
 
-    const yearsOfExp = new Date().getFullYear() - 2021;
+    const yearsOfExp = new Date().getFullYear() - 2021 + '+';
 
     const courses = [];
 
