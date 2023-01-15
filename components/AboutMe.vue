@@ -75,6 +75,8 @@
             }
 
             .about__data {
+                color: var(--text-color);
+
                 .about__heading {
                     font-size: var(--h3-font-size);
                     margin-bottom: 12px;
@@ -84,6 +86,7 @@
                     text-align: justify;
                     padding-right: 6rem;
                     margin-bottom: 2rem;
+                    
                 }
 
                 .about__info {
@@ -115,4 +118,75 @@
             }
         }
     }
+
+    @media (max-width: 1024px) {
+        .section {
+            padding: 1rem 0;
+        }
+        .about {
+            &__container {
+                grid-template-columns: 1fr;
+                row-gap: 2.5rem;
+
+                .about__img {
+                    width: 440px;
+                }
+
+                .about__data {
+                    text-align: center;
+
+                    .about__description {
+                        text-align: center;
+                        padding: 0 4rem;
+                        margin-bottom: 2rem;
+                    }
+
+                    .about__info {
+                        justify-content: center;
+
+                        .about__box {
+                            padding: .75rem .5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .about {
+            &__container {
+                .about__img {
+                    width: 360px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        .about {
+            &__container {
+                .about__img {
+                    width: 320px;
+                }
+
+                .about__data {
+                    .about__description {
+                        padding: 0 1rem;
+                    }
+
+                    .about__info {
+                        grid-template-columns: repeat(3, 1fr);
+
+                        .about__box {
+                            .about__title {
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 </style>
