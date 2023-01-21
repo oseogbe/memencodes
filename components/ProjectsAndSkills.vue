@@ -188,7 +188,7 @@
 <style lang="scss" scoped>
     .filters {
         &__content {
-            margin: 2rem 0 2.5rem;
+            margin-bottom: 3rem;
             background-color: var(--text-color-lighten);
             padding: .375rem;
             border-radius: .75rem;

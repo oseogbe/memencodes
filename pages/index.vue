@@ -3,8 +3,8 @@
         <Header />
         <main>
             <AboutMe />
-            <MyPackages />
             <ProjectsAndSkills />
+            <MyPackages />
         </main>
         <Footer />
     </div>
