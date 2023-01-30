@@ -42,8 +42,8 @@
                     <p class="profile__info-description">Acquired <br /> certifications</p>
                 </div> -->
                 <div class="profile__info-group">
-                    <h3 class="profile__info-number">{{ courses.length }}</h3>
-                    <p class="profile__info-description">Development <br /> courses</p>
+                    <h3 class="profile__info-number">{{ companies.length }}</h3>
+                    <p class="profile__info-description">Companies <br /> worked for</p>
                 </div>
                 <div class="profile__info-group">
                     <h3 class="profile__info-number">{{ projectsCount }}</h3>
@@ -86,6 +86,15 @@
     const yearsOfExp = new Date().getFullYear() - 2021 + '+';
 
     const courses = [];
+
+    const companies = [
+        // 'Pn Consulting Limited',
+        'Sekani-Tech Limited',
+        'Reimnet',
+        // 'BigCommand LLC',
+        'Bex-IT Digital Solutions',
+        // 'Siitech'
+    ];
 
     const toggleTheme = () => {
         isLight.value = !isLight.value

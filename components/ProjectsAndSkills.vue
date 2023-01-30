@@ -76,12 +76,12 @@
             'thumbnail': 'img/artco_1.png',
             'link': 'https://theartville.com'
         },
-        // {
-        //     'category': 'Movies',
-        //     'title': 'Muvee',
-        //     'thumbnail': 'img/muvee.png',
-        //     'link': 'https://muvee.netlify.app'
-        // },
+        {
+            'category': 'Movies',
+            'title': 'Muvee',
+            'thumbnail': 'img/muvee.png',
+            'link': 'https://muvee.netlify.app'
+        },
         // {
         //     'category': 'Portfolio',
         //     'title': 'Aybee Adayi',
