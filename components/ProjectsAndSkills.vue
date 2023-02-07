@@ -20,7 +20,7 @@
                         <div>
                             <span class="projects__subtitle">{{ project.category }}</span>
                             <h3 class="projects__title">{{ project.title }}</h3>
-                            <a :href="project.link" class="projects__button button button__small">
+                            <a :href="project.link" class="projects__button button button__small" target="_blank">
                                 <i class="fas fa-link"></i>
                             </a>
                         </div>
@@ -81,6 +81,12 @@
             'title': 'Muvee',
             'thumbnail': 'img/muvee.png',
             'link': 'https://muvee.netlify.app'
+        },
+        {
+            'category': 'LinkedIn Clone',
+            'title': 'LinkedOn',
+            'thumbnail': 'img/linkedon.png',
+            'link': 'https://linkedon.netlify.app'
         },
         // {
         //     'category': 'Portfolio',
