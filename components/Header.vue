@@ -52,7 +52,7 @@
             </div>
 
             <div class="profile__buttons">
-                <a download href="pdf/Osememen-Ogbe-CV.pdf" class="button">
+                <a download href="pdf/osememen-ogbe-resume.pdf" class="button">
                     Download CV <i class="fas fa-download" style="font-size: 1rem;"></i>
                 </a>
 
