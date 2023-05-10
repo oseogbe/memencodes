@@ -83,7 +83,7 @@
         ]
     })
 
-    const yearsOfExp = new Date().getFullYear() - 2021 + '+';
+    const yearsOfExp = new Date().getFullYear() - 2019 + '+';
 
     const courses = [];
 
@@ -91,9 +91,9 @@
         // 'Pn Consulting Limited',
         'Sekani-Tech Limited',
         'Reimnet',
-        // 'BigCommand LLC',
+        'BigCommand LLC',
         'Bex-IT Digital Solutions',
-        // 'Siitech'
+        'Siitech'
     ];
 
     const toggleTheme = () => {
