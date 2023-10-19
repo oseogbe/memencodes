@@ -134,6 +134,12 @@ const projects = reactive([
     },
     {
         category: "Movies",
+        title: "Netflix Clone",
+        thumbnail: "img/netflix-clone.png",
+        link: "https://netflix-clone-rho-mauve-31.vercel.app",
+    },
+    {
+        category: "Movies",
         title: "Muvee",
         thumbnail: "img/muvee.png",
         link: "https://muvee.netlify.app",
