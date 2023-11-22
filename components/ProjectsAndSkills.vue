@@ -91,6 +91,12 @@ const onSkills = ref(false);
 
 const projects = reactive([
     {
+        category: "Corporate",
+        title: "Sarius Palmetum",
+        thumbnail: "img/spmc.png",
+        link: "https://spmc-theta.vercel.app",
+    },
+    {
         category: "Savings & Loans",
         title: "SavingsBox",
         thumbnail: "img/savingsbox.png",
