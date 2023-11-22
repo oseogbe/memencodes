@@ -170,7 +170,7 @@ const skills = reactive([
             },
             {
                 name: "TailwindCSS",
-                level: "Expert",
+                level: "Advanced",
             },
             {
                 name: "Bootstrap",
@@ -178,7 +178,7 @@ const skills = reactive([
             },
             {
                 name: "Vuetify",
-                level: "Advanced",
+                level: "Intermediate",
             },
             {
                 name: "VueJS",
@@ -186,11 +186,15 @@ const skills = reactive([
             },
             {
                 name: "NuxtJS",
-                level: "Advanced",
+                level: "Intermediate",
             },
             {
                 name: "ReactJS",
-                level: "Intermediate",
+                level: "Advanced",
+            },
+            {
+                name: "NextJS",
+                level: "Advanced",
             },
         ],
     },
@@ -199,7 +203,7 @@ const skills = reactive([
         skillsets: [
             {
                 name: "PHP",
-                level: "Advanced",
+                level: "Expert",
             },
             {
                 name: "Laravel",

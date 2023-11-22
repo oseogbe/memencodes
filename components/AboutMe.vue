@@ -14,29 +14,24 @@
             <div class="about__data">
                 <!-- <h3 class="about__heading">Hi, I'm Osememen Ogbe, Based in Nigeria</h3> -->
                 <p class="about__description">
-                    <!-- Welcome to my personal portfolio website! My name is Osememen Ogbe and I am a software developer with experience in a variety of programming languages and technologies. I have a passion for creating innovative solutions and have a track record of delivering high-quality, efficient code. -->
-                    Welcome to my personal portfolio website! My name is
-                    Osememen Ogbe and I am a software developer with a passion
-                    for creating innovative solutions and I have a track record
-                    of delivering high-quality, efficient code.
+                    Welcome to my portfolio website! My name is Osememen Ogbe
+                    and I am a software developer with a track record of
+                    creating industry standard websites and applications.
                     <br /><br />
-                    <!-- Throughout my career, I have worked on a wide range of projects, from small-scale web applications to large-scale enterprise systems.  -->
-                    I am highly skilled in languages such as PHP, JavaScript,
-                    and Go, and have experience with various frameworks and
-                    libraries such as Laravel, Express.js, Vue.js and React.js.
+                    My tech stack includes PHP, Laravel, Node.js, Express.js,
+                    Go, Vue.js, React.js and Next.js.
                     <br /><br />
-                    In addition to my tech<!--nical-->
-                    skills, I am a strong communicator and team player. I enjoy
-                    working with cross-functional teams to understand business
-                    requirements and deliver solutions that meet the needs of
-                    the user. <br /><br />
+                    In addition to my tech skills, I am a strong communicator
+                    and team player. I enjoy working with cross-functional teams
+                    to understand business requirements and deliver solutions
+                    tailored to the needs of the user. <br /><br />
                     I am always looking to learn new technologies and expand my
                     skill set. In my free time, I enjoy staying up-to-date with
-                    the latest industry trends and experimenting with new tools
-                    and techniques.
+                    the latest industry trends and experimenting with new
+                    technologies and techniques.
                     <br /><br />
-                    Thank you for visiting my portfolio site and I look forward
-                    to connecting with you.
+                    Thank you for visiting my site and I look forward to the
+                    possibility of working with you.
                 </p>
                 <!-- <div class="about__info grid">
                     <div class="about__box">
