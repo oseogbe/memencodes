@@ -91,6 +91,12 @@ const onSkills = ref(false);
 
 const projects = reactive([
     {
+        category: "E-Commerce",
+        title: "Africana",
+        thumbnail: "img/africana.png",
+        link: "https://shopafricana.co",
+    },
+    {
         category: "Savings & Loans",
         title: "SavingsBox",
         thumbnail: "img/savingsbox.png",
