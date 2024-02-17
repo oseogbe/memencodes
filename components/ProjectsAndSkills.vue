@@ -91,35 +91,35 @@ const onSkills = ref(false);
 
 const projects = reactive([
     {
-        category: "Corporate",
-        title: "Sarius Palmetum",
-        thumbnail: "img/spmc.png",
-        link: "https://spmc-theta.vercel.app",
-    },
-    {
         category: "Savings & Loans",
         title: "SavingsBox",
         thumbnail: "img/savingsbox.png",
         link: "https://savingsbox.ng",
     },
     {
-        category: "Recruitment",
-        title: "Hire4Africa",
-        thumbnail: "img/h4a_1.png",
-        link: "https://hire4africa.com",
+        category: "Corporate",
+        title: "Sarius Palmetum",
+        thumbnail: "img/spmc.png",
+        link: "https://sariuspalmetum.com",
     },
-    {
-        category: "Affiliate Marketing",
-        title: "LifestyleHub",
-        thumbnail: "img/lsh_1.png",
-        link: "https://lsh.cp.reimnet.com",
-    },
-    {
-        category: "E-Commerce",
-        title: "TheArtVille",
-        thumbnail: "img/artco_1.png",
-        link: "https://theartville.com",
-    },
+    // {
+    //     category: "Recruitment",
+    //     title: "Hire4Africa",
+    //     thumbnail: "img/h4a_1.png",
+    //     link: "https://hire4africa.com",
+    // },
+    // {
+    //     category: "Affiliate Marketing",
+    //     title: "LifestyleHub",
+    //     thumbnail: "img/lsh_1.png",
+    //     link: "https://lsh.cp.reimnet.com",
+    // },
+    // {
+    //     category: "E-Commerce",
+    //     title: "TheArtVille",
+    //     thumbnail: "img/artco_1.png",
+    //     link: "https://theartville.com",
+    // },
     {
         category: "LinkedIn Clone",
         title: "LinkedOn",
@@ -133,23 +133,17 @@ const projects = reactive([
     //     'link': 'https://aybeeadayi.netlify.app'
     // },
     {
-        category: "Statistics",
-        title: "Covid19 Tracker",
-        thumbnail: "img/c19-tracker.png",
-        link: "https://covid-19-tracker-b3746.web.app",
-    },
-    {
         category: "Movies",
         title: "Netflix Clone",
         thumbnail: "img/netflix-clone.png",
         link: "https://netflix-clone-rho-mauve-31.vercel.app",
     },
-    {
-        category: "Movies",
-        title: "Muvee",
-        thumbnail: "img/muvee.png",
-        link: "https://muvee.netlify.app",
-    },
+    // {
+    //     category: "Movies",
+    //     title: "Muvee",
+    //     thumbnail: "img/muvee.png",
+    //     link: "https://muvee.netlify.app",
+    // },
 ]);
 
 const skills = reactive([
