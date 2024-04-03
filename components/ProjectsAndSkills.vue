@@ -91,6 +91,12 @@ const onSkills = ref(false);
 
 const projects = reactive([
     {
+        category: "Booking",
+        title: "Greendest",
+        thumbnail: "img/greenflats.png",
+        link: "https://greenflats.vercel.app",
+    },
+    {
         category: "E-Commerce",
         title: "Africana",
         thumbnail: "img/africana.png",
@@ -138,12 +144,12 @@ const projects = reactive([
     //     'thumbnail': 'img/aybee-adayi.png',
     //     'link': 'https://aybeeadayi.netlify.app'
     // },
-    {
-        category: "Movies",
-        title: "Netflix Clone",
-        thumbnail: "img/netflix-clone.png",
-        link: "https://netflix-clone-rho-mauve-31.vercel.app",
-    },
+    // {
+    //     category: "Movies",
+    //     title: "Netflix Clone",
+    //     thumbnail: "img/netflix-clone.png",
+    //     link: "https://netflix-clone-rho-mauve-31.vercel.app",
+    // },
     // {
     //     category: "Movies",
     //     title: "Muvee",
@@ -161,7 +167,7 @@ const skills = reactive([
                 level: "Advanced",
             },
             {
-                name: "CSS/SCSS",
+                name: "CSS",
                 level: "Advanced",
             },
             {
@@ -173,28 +179,16 @@ const skills = reactive([
                 level: "Advanced",
             },
             {
-                name: "Bootstrap",
-                level: "Advanced",
-            },
-            {
-                name: "Vuetify",
-                level: "Intermediate",
-            },
-            {
-                name: "VueJS",
-                level: "Advanced",
-            },
-            {
-                name: "NuxtJS",
-                level: "Intermediate",
-            },
-            {
                 name: "ReactJS",
                 level: "Advanced",
             },
             {
                 name: "NextJS",
                 level: "Advanced",
+            },
+            {
+                name: "VueJS",
+                level: "Intermediate",
             },
         ],
     },
@@ -203,11 +197,11 @@ const skills = reactive([
         skillsets: [
             {
                 name: "PHP",
-                level: "Expert",
+                level: "Advanced",
             },
             {
                 name: "Laravel",
-                level: "Expert",
+                level: "Advanced",
             },
             {
                 name: "Node.js",
@@ -215,11 +209,15 @@ const skills = reactive([
             },
             {
                 name: "Express.js",
-                level: "Intermediate",
+                level: "Advanced",
             },
             {
                 name: "Go",
                 level: "Intermediate",
+            },
+            {
+                name: "Prisma",
+                level: "Advanced",
             },
             {
                 name: "MySQL",
@@ -227,7 +225,7 @@ const skills = reactive([
             },
             {
                 name: "PostgreSQL",
-                level: "Basic",
+                level: "Intermediate",
             },
             {
                 name: "MongoDB",
@@ -235,6 +233,10 @@ const skills = reactive([
             },
             {
                 name: "Firebase",
+                level: "Advanced",
+            },
+            {
+                name: "Redis",
                 level: "Advanced",
             },
         ],
